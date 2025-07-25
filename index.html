@@ -19,28 +19,62 @@
   </head>
   <body class="bg-[#F5F8FF] box-border">
     <header class="max-w-6xl mx-auto my-7">
-      <nav class="flex items-center justify-between m-7">
-        <div>
-          <img class="max-sm:w-16 max-sm:h-11" src="./image/logo.png" alt="" />
+      <!-- navigation Page -->
+      <nav
+        class="flex items-center justify-between px-6 py-4 rounded-xl max-w-6xl mx-auto transition-transform duration-500 ease-in-out hover:scale-105 hover:bg-orange-50"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <a href="#">
+            <img
+              src="./image/logo.png"
+              alt="Logo"
+              class="w-20 h-auto max-sm:w-16 transition-transform duration-300 hover:rotate-3"
+            />
+          </a>
         </div>
-        <div>
-          <ul class="flex gap-12">
-            <li class="font-inter font-bold text-base max-sm:hidden">Home</li>
-            <li class="font-inter text-[#8987A1] text-base max-sm:hidden">
+
+        <!-- Navigation Links -->
+        <ul class="sm:flex items-center gap-10 text-base font-inter">
+          <li class="max-sm:hidden">
+            <a
+              href="#"
+              class="text-gray-800 font-semibold transition-colors duration-300 hover:text-orange-500 hover:underline underline-offset-4"
+            >
+              Home
+            </a>
+          </li>
+          <li class="max-sm:hidden">
+            <a
+              href="#"
+              class="text-gray-500 transition-colors duration-300 hover:text-orange-500 hover:underline underline-offset-4"
+            >
               Shop
-            </li>
-            <li class="font-inter text-[#8987A1] text-base max-sm:hidden">
-              About us
-            </li>
-            <li class="font-inter text-base max-sm:text-[20px]">
-              <i class="fa-solid fa-cart-shopping"></i> Cart ($56)
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+          <li class="max-sm:hidden">
+            <a
+              href="#"
+              class="text-gray-500 transition-colors duration-300 hover:text-orange-500 hover:underline underline-offset-4"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center gap-2 text-black transition-transform duration-300 hover:text-orange-500 hover:scale-110"
+            >
+              <i class="fa-solid fa-cart-shopping text-xl"></i>
+              <span>Cart ($56)</span>
+            </a>
+          </li>
+        </ul>
       </nav>
 
+      <!-- FRESH FLOWERS Section -->
       <section
-        class="flex my-36 items-end max-sm:flex-col-reverse max-md:flex-col-reverse"
+        class="flex my-36 items-end max-sm:flex-col-reverse max-md:flex-col-reverse transition-all duration-700 hover:opacity-100 hover:scale-100 opacity-95 scale-[0.98]"
       >
         <div class="max-w-6xl">
           <h1
@@ -64,6 +98,7 @@
       </section>
     </header>
     <main>
+      <!-- our plant section  -->
       <section class="plant mt-14">
         <div class="text-center">
           <h1 class="text-6xl noto-serif font-bold mb-6">
@@ -76,10 +111,13 @@
           </p>
         </div>
 
+        <!-- card section  -->
         <div
           class="max-w-6xl grid grid-cols-4 m-auto gap-5 mt-12 max-sm:grid-cols-2 max-sm:m-5 max-md:grid-cols-3 max-md:m-5"
         >
-          <div class="max-w-2xs bg-amber-100 rounded-3xl mt-8">
+          <div
+            class="max-w-2xs bg-amber-100 rounded-3xl mt-8 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <img
               class="w-2xs h-[350px] rounded-2xl"
               src="./image/sample-flower-image.png"
@@ -90,12 +128,15 @@
               <h2 class="text-2xl font-inter font-bold mt-2">20 USD</h2>
             </div>
             <button
-              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer"
+              aria-label="Add Lily Blossom to cart"
+              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer transition duration-300 transform hover:scale-105"
             >
               ADD TO CART
             </button>
           </div>
-          <div class="max-w-2xs bg-amber-100 rounded-3xl mt-8">
+          <div
+            class="max-w-2xs bg-amber-100 rounded-3xl mt-8 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <img
               class="w-2xs h-[350px] rounded-2xl"
               src="./image/sample-flower-image.png"
@@ -106,12 +147,14 @@
               <h2 class="text-2xl font-inter font-bold mt-2">20 USD</h2>
             </div>
             <button
-              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer"
+              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer transition duration-300 transform hover:scale-105"
             >
               ADD TO CART
             </button>
           </div>
-          <div class="max-w-2xs bg-amber-100 rounded-3xl mt-8">
+          <div
+            class="max-w-2xs bg-amber-100 rounded-3xl mt-8 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <img
               class="w-2xs h-[350px] rounded-2xl"
               src="./image/sample-flower-image.png"
@@ -122,12 +165,14 @@
               <h2 class="text-2xl font-inter font-bold mt-2">20 USD</h2>
             </div>
             <button
-              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer"
+              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer transition duration-300 transform hover:scale-105"
             >
               ADD TO CART
             </button>
           </div>
-          <div class="max-w-2xs bg-amber-100 rounded-3xl mt-8">
+          <div
+            class="max-w-2xs bg-amber-100 rounded-3xl mt-8 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <img
               class="w-2xs h-[350px] rounded-2xl"
               src="./image/sample-flower-image.png"
@@ -138,12 +183,14 @@
               <h2 class="text-2xl font-inter font-bold mt-2">20 USD</h2>
             </div>
             <button
-              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer"
+              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer transition duration-300 transform hover:scale-105"
             >
               ADD TO CART
             </button>
           </div>
-          <div class="max-w-2xs bg-amber-100 rounded-3xl mt-8">
+          <div
+            class="max-w-2xs bg-amber-100 rounded-3xl mt-8 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <img
               class="w-2xs h-[350px] rounded-2xl"
               src="./image/sample-flower-image.png"
@@ -154,12 +201,14 @@
               <h2 class="text-2xl font-inter font-bold mt-2">20 USD</h2>
             </div>
             <button
-              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer"
+              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer transition duration-300 transform hover:scale-105"
             >
               ADD TO CART
             </button>
           </div>
-          <div class="max-w-2xs bg-amber-100 rounded-3xl mt-8">
+          <div
+            class="max-w-2xs bg-amber-100 rounded-3xl mt-8 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <img
               class="w-2xs h-[350px] rounded-2xl"
               src="./image/sample-flower-image.png"
@@ -170,12 +219,14 @@
               <h2 class="text-2xl font-inter font-bold mt-2">20 USD</h2>
             </div>
             <button
-              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer"
+              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer transition duration-300 transform hover:scale-105"
             >
               ADD TO CART
             </button>
           </div>
-          <div class="max-w-2xs bg-amber-100 rounded-3xl mt-8">
+          <div
+            class="max-w-2xs bg-amber-100 rounded-3xl mt-8 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <img
               class="w-2xs h-[350px] rounded-2xl"
               src="./image/sample-flower-image.png"
@@ -186,12 +237,14 @@
               <h2 class="text-2xl font-inter font-bold mt-2">20 USD</h2>
             </div>
             <button
-              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer"
+              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer transition duration-300 transform hover:scale-105"
             >
               ADD TO CART
             </button>
           </div>
-          <div class="max-w-2xs bg-amber-100 rounded-3xl mt-8">
+          <div
+            class="max-w-2xs bg-amber-100 rounded-3xl mt-8 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <img
               class="w-2xs h-[350px] rounded-2xl"
               src="./image/sample-flower-image.png"
@@ -202,7 +255,7 @@
               <h2 class="text-2xl font-inter font-bold mt-2">20 USD</h2>
             </div>
             <button
-              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer"
+              class="bg-amber-600 w-full text-base mt-3 text-white py-4 rounded-[5px] hover:bg-blue-400 cursor-pointer transition duration-300 transform hover:scale-105"
             >
               ADD TO CART
             </button>
@@ -218,7 +271,7 @@
         >
           <div class="mr-10 max-sm:mx-auto max-md:mx-auto">
             <img
-              class="absolute w-2xs h-75 left-78 bottom-100 drop-shadow-xl/50 max-sm:hidden max-md:hidden"
+              class="absolute w-75 h-75 left-78 bottom-100 drop-shadow-xl/50 max-sm:hidden max-md:hidden hover:rotate-360"
               src="./image/trusted-badge.png"
               alt=""
             />
@@ -234,21 +287,23 @@
             >
               Flower & Plants Lover
             </h1>
-            <ul class="list-disc text-[22px] opacity-50 pl-12 font-inter">
-              <li class="my-5">
+            <ul class="list-disc text-[22px] pl-12 font-inter space-y-5">
+              <li
+                class="transition-transform duration-300 hover:translate-x-2 hover:text-orange-500"
+              >
                 Indulge your senses with the beauty and fragrance of our fresh
-                flower shop. From classic roses to exotic blooms, we offer a
-                wide variety of fresh.
+                flower shop.
               </li>
-              <li class="my-5">
-                Indulge your senses with the beauty and fragrance of our fresh
-                flower shop. From classic roses to exotic blooms, we offer a
-                wide variety of fresh.
+              <li
+                class="transition-transform duration-300 hover:translate-x-2 hover:text-orange-500"
+              >
+                From classic roses to exotic blooms, we offer a wide variety of
+                fresh.
               </li>
-              <li class="my-5">
-                Indulge your senses with the beauty and fragrance of our fresh
-                flower shop. From classic roses to exotic blooms, we offer a
-                wide variety of fresh.
+              <li
+                class="transition-transform duration-300 hover:translate-x-2 hover:text-orange-500"
+              >
+                Perfect for any occasion or gift to your loved ones.
               </li>
             </ul>
           </div>
@@ -267,7 +322,9 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-25">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-25 transition-transform duration-500 hover:scale-[1.01]"
+        >
           <div class="flex flex-col gap-6">
             <div class="rounded-lg overflow-hidden relative">
               <img
@@ -276,7 +333,7 @@
                 class="w-full h-full object-cover"
               />
               <div
-                class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4"
+                class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4 transition-all duration-500 hover:bg-black/60 hover:scale-105"
               >
                 <h1 class="text-lg font-semibold">60% Off | Bloom Plant</h1>
                 <a href="#" class="underline mt-2 font-bold">Shop Now</a>
@@ -289,7 +346,7 @@
                 class="w-full h-full object-cover"
               />
               <div
-                class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4"
+                class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4 transition-all duration-500 hover:bg-black/60 hover:scale-105"
               >
                 <h1 class="text-lg font-semibold">30% Off | Ana Plant</h1>
                 <a href="#" class="underline mt-2 font-bold">Shop Now</a>
@@ -301,74 +358,163 @@
           <div class="relative sm:col-span-2 rounded-lg overflow-hidden">
             <img src="./image/deal-zabo.png" alt="" class="w-full h-ful" />
             <div
-              class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4"
+              class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4 transition-all duration-500 hover:bg-black/60 hover:scale-105"
             >
-              <h1 class="text-4xl font-bold">25% Off | Zabo Plant</h1>
-              <a href="#" class="mt-3 text-2xl underline font-bold">Shop Now</a>
+              <h1 class="text-4xl max-sm:text-lg font-bold">
+                25% Off | Zabo Plant
+              </h1>
+              <a href="#" class="mt-3 md:text-2xl underline font-bold"
+                >Shop Now</a
+              >
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Form section  -->
       <section
         class="w-full h-screen bg-[url('./image/news-letter-bg.png')] bg-cover bg-center grid place-items-center mb-25"
       >
-        <div class="text-center px-4 w-full max-w-2xl">
-          <h1 class="text-white text-2xl md:text-4xl font-bold mb-6">
+        <div
+          class="text-center px-4 w-full max-w-2xl group transition duration-700 transform hover:scale-105 hover:shadow-2xl"
+        >
+          <h1
+            class="text-white text-4xl md:text-5xl font-bold mb-6 transition-all duration-500 ease-in-out group-hover:text-orange-400"
+          >
             Join the colorful Bunch
           </h1>
 
-          <div
-            class="grid grid-cols-[1fr_auto] gap-0 w-full rounded-md overflow-hidden"
+          <form
+            class="grid grid-cols-[1fr_auto] gap-0 w-full rounded-md overflow-hidden transition-all duration-500"
           >
             <input
               type="email"
               placeholder="Write email"
-              class="w-full px-4 py-3 text-black outline-none bg-white"
+              class="w-full px-4 py-3 text-black outline-none bg-white focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300"
+              required
             />
             <button
               type="submit"
-              class="bg-orange-500 hover:bg-blue-400 text-white font-semibold px-6 py-3"
+              class="bg-orange-500 text-white font-semibold px-6 py-3 transition transform duration-300 hover:bg-blue-400 hover:scale-105"
             >
               Subscribe
             </button>
-          </div>
+          </form>
         </div>
       </section>
     </main>
+
     <footer
-      class="grid grid-cols-4 max-w-6xl m-auto max-sm:grid-cols-1 max-sm:text-left gap-25 max-sm:mx-5 max-sm:gap-5"
+      class="grid grid-cols-4 max-w-6xl m-auto max-sm:grid-cols-1 max-sm:text-left gap-10 max-sm:mx-5 max-sm:gap-5 pb-10"
     >
-      <div class="w-[360px]">
-        <img src="./image/logo.png" alt="" />
+      <!-- Logo and description -->
+      <div
+        class="w-[360px] transition duration-500 transform hover:-translate-y-1 hover:shadow-md"
+      >
+        <a href="#"
+          ><img
+            src="./image/logo.png"
+            alt="Logo"
+            class="transition duration-300 hover:scale-105"
+        /></a>
         <p class="font-inter opacity-50 mt-5 text-[22px] leading-7">
           Indulge your senses with the beauty and fragrance of our fresh flower
           shop.
         </p>
       </div>
-      <div class="max-w-23 ml-30 max-sm:m-0 opacity-50">
-        <ul class="font-inter">
-          <li>Home</li>
-          <li class="mt-6">About Us</li>
-          <li class="mt-6">Blog</li>
-          <li class="mt-6">FAQ</li>
-          <li class="mt-6">Contact Us</li>
+
+      <!-- Column 1 -->
+      <div
+        class="max-w-[200px] ml-30 max-sm:m-0 opacity-50 transition duration-500 transform hover:-translate-y-1"
+      >
+        <ul class="font-inter space-y-6">
+          <li>
+            <a href="#" class="transition hover:text-orange-500 hover:underline"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition hover:text-orange-500 hover:underline"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition hover:text-orange-500 hover:underline"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition hover:text-orange-500 hover:underline"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition hover:text-orange-500 hover:underline"
+              >Contact Us</a
+            >
+          </li>
         </ul>
       </div>
-      <div class="max-w-33 ml-20 max-sm:m-0 opacity-50">
-        <ul class="font-inter">
-          <li>Features</li>
-          <li class="mt-6">Pricing</li>
-          <li class="mt-6">Privacy Policy</li>
-          <li class="mt-6">Terms of Service</li>
-          <li class="mt-6">Help Center</li>
+
+      <!-- Column 2 -->
+      <div
+        class="max-w-[200px] ml-20 max-sm:m-0 opacity-50 transition duration-500 transform hover:-translate-y-1"
+      >
+        <ul class="font-inter space-y-6">
+          <li>
+            <a href="#" class="transition hover:text-orange-500 hover:underline"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition hover:text-orange-500 hover:underline"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition hover:text-orange-500 hover:underline"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition hover:text-orange-500 hover:underline"
+              >Terms of Service</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition hover:text-orange-500 hover:underline"
+              >Help Center</a
+            >
+          </li>
         </ul>
       </div>
-      <div class="flex gap-6">
-        <img class="w-8 h-8" src="./image/icon-linkedin.png" alt="" />
-        <img class="w-8 h-8" src="./image/icon-twitter.png" alt="" />
-        <img class="w-8 h-8" src="./image/icon-facebook.png" alt="" />
-        <img class="w-8 h-8" src="./image/icon-youtube.png" alt="" />
+
+      <!-- Social Icons -->
+      <div class="flex gap-6 items-start">
+        <a
+          href="#"
+          class="transition transform hover:scale-110 hover:rotate-3 hover:text-blue-500"
+        >
+          <img class="w-8 h-8" src="./image/icon-linkedin.png" alt="LinkedIn" />
+        </a>
+        <a
+          href="#"
+          class="transition transform hover:scale-110 hover:rotate-3 hover:text-blue-400"
+        >
+          <img class="w-8 h-8" src="./image/icon-twitter.png" alt="Twitter" />
+        </a>
+        <a
+          href="#"
+          class="transition transform hover:scale-110 hover:rotate-3 hover:text-blue-700"
+        >
+          <img class="w-8 h-8" src="./image/icon-facebook.png" alt="Facebook" />
+        </a>
+        <a
+          href="#"
+          class="transition transform hover:scale-110 hover:rotate-3 hover:text-red-600"
+        >
+          <img class="w-8 h-8" src="./image/icon-youtube.png" alt="YouTube" />
+        </a>
       </div>
     </footer>
   </body>
